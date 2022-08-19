@@ -1,0 +1,315 @@
+.fa-instagram{
+  font-size:20px !important
+}
+.storiesRow2 .col{
+    padding-right:0px;
+    padding-bottom:5px;
+}
+.storiesRow1 .logoDiv img{
+    width:50px !important
+}
+.storiesRow2 .col img{
+    border-radius:10px;
+}
+.stories .storiesBtn,
+.stories .storiesBtn:hover,
+.stories .storiesBtn:active,
+.stories .storiesBtn:focus,
+.stories .storiesBtn:visited {
+  height: 42px;
+  line-height: 42px;
+  width: 130px;
+  border-radius: 5px;
+  font-size: 18px;
+  background: transparent !important;
+  color: rgb(188 3 5);
+  border: 1px solid rgb(188 3 5);
+  margin-top:20px;
+  outline-style: double;
+  outline-color: grey
+}
+.storiesRow1 h5{
+  font-size:30px;
+  margin-top:6px;
+  margin-bottom: 0;
+}
+.storiesRow1 .col{
+    flex-basis:auto
+}
+.storiesRow1 p{
+  font-size:16px;
+  margin-top: 10px;
+}
+.storiesRow1 .storiesBtn i {
+    font-size: 17px;
+}
+.storiesLoad,
+.storiesLoad:hover,
+.storiesLoad:active,
+.storiesLoad:focus,
+.storiesLoad:visited{
+  height: 42px;
+    width: 160px;
+    border-radius: 5px;
+    font-size: 18px;
+    background: transparent !important;
+    color: rgb(188 3 5);
+    border: 1px solid rgb(188 3 5);
+    margin-bottom: 50px;
+    line-height: 42px;
+}
+.vidRow iframe{
+  width:100%;
+  height:300px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  outline-style: double;
+  outline-color: grey
+}
+.vidRow{
+  display: block
+}
+.imgRow img{
+  width:100%;
+  height:300px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  outline-style: double;
+  outline-color: grey
+}
+.imgRow{
+  display: block
+}
+.stories{
+  display: block
+}
+@media (max-width:300px){
+  .storiesRow1 h5 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.stories .storiesBtn, .stories .storiesBtn:hover, .stories .storiesBtn:active, .stories .storiesBtn:focus, .stories .storiesBtn:visited {
+  height: 30px;
+    width: 110px;
+    font-size: 12px;
+    margin-right: 35%;
+    margin-top: -10px;
+    line-height: 27px;
+}
+}
+@media (min-width:301px) and (max-width:400px){
+  .storiesRow1 .storiesBtn i {
+    font-size: 13px;
+}
+  .storiesRow1 .logoDiv {
+    padding: 5px;
+    padding-top: 10px;
+    height: 40px;
+    width: 40px;
+}
+  .storiesRow1 p {
+    font-size: 9px;
+}
+  .storiesRow1 h5 {
+    font-size: 14px;
+    margin-top: 3px;
+    margin-bottom: -7px;
+}
+.stories .storiesBtn, .stories .storiesBtn:hover, .stories .storiesBtn:active, .stories .storiesBtn:focus, .stories .storiesBtn:visited {
+  height: 30px;
+    width: 110px;
+    font-size: 12px;
+    margin-right: 35%;
+    margin-top: -10px;
+    line-height: 27px;
+}
+}
+@media (min-width:401px) and (max-width:600px){
+  .storiesRow1 .storiesBtn i {
+    font-size: 13px;
+}
+  .storiesRow1 h5 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.stories .storiesBtn, .stories .storiesBtn:hover, .stories .storiesBtn:active, .stories .storiesBtn:focus, .stories .storiesBtn:visited {
+  height: 30px;
+    width: 110px;
+    font-size: 12px;
+    margin-right: 35%;
+    margin-top: -10px;
+    line-height: 27px;
+}
+.storiesRow1 p {
+    font-size: 10px;
+}
+}
+@media (max-width:600px){
+  .vidRow iframe {
+    margin-bottom: 10px;
+    height: 150px
+  }
+  .imgRow img{
+    height: 140px;
+    margin-bottom: 20px
+  }
+  .fa-instagram{
+  font-size: 12px !important;
+}
+.stories p{
+  font-size:12px
+}
+}
+@media (min-width:601px) and (max-width:767px){
+  .imgRow img{
+    margin-bottom: 20px
+  }
+  .vidRow iframe {
+    margin-bottom: 10px;
+    height: 150px
+}
+  .storiesRow1 h5 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.storiesRow1 p {
+    font-size: 14px;
+}
+.storiesRow1 .storiesBtn, .storiesRow1 .storiesBtn:hover, .storiesRow1 .storiesBtn:active, .storiesRow1 .storiesBtn:focus, .storiesRow1 .storiesBtn:visited {
+    height: 37px;
+    width: 120px;
+    font-size: 14px;
+}
+}
+@media (min-width:768px) and (max-width:991px){
+  .vidRow iframe {
+    margin-bottom: 15px;
+    height: 200px
+}
+.imgRow img{
+  margin-bottom: 20px;
+  height: 200px
+}
+  .storiesRow1 h5 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.storiesRow1 .storiesBtn, .storiesRow1 .storiesBtn:hover, .storiesRow1 .storiesBtn:active, .storiesRow1 .storiesBtn:focus, .storiesRow1 .storiesBtn:visited {
+    height: 37px;
+    width: 120px;
+    font-size: 14px;
+}
+.storiesRow1{
+  margin-bottom:0;
+}
+}
+@media (min-width:992px) and (max-width:1199px){
+  .imgRow img{
+    margin-bottom: 20px
+  }
+  .vidRow iframe {
+    margin-bottom: 15px
+}
+  .storiesRow1 h5 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.storiesRow1 p {
+    font-size: 14px;
+}
+.storiesRow1 .storiesBtn, .storiesRow1 .storiesBtn:hover, .storiesRow1 .storiesBtn:active, .storiesRow1 .storiesBtn:focus, .storiesRow1 .storiesBtn:visited {
+    height: 37px;
+    width: 120px;
+    font-size: 14px;
+}
+}
+@media (min-width:1601px) and (max-width:1800px){
+  .storiesRow1 p {
+    font-size: 14px;
+}
+.storiesRow1 h5 {
+    font-size: 25px;
+    margin-top: 12px;
+}
+}
+@media (min-width:1401px) and (max-width:1600px){
+  .imgRow img{
+    margin-bottom: 25px
+  }
+  .storiesRow1 p {
+    font-size: 16px;
+    margin-top: 8px;
+}
+.storiesRow1 h5 {
+  font-size: 23px;
+    margin-top: 5px;
+}
+.storiesRow1 .logoDiv {
+    padding-top: 18px;
+    height: 70px;
+    width: 70px;
+}
+.storiesRow1 .storiesBtn, .storiesRow1 .storiesBtn:hover, .storiesRow1 .storiesBtn:active, .storiesRow1 .storiesBtn:focus, .storiesRow1 .storiesBtn:visited {
+    height: 40px;
+    width: 120px;
+    font-size: 16px;
+    margin-top: 30px
+}
+.storiesLoad,
+.storiesLoad:hover,
+.storiesLoad:active,
+.storiesLoad:focus,
+.storiesLoad:visited{
+    height: 40px;
+    width: 150px;
+    font-size: 16px;
+    margin-bottom: 50px
+}
+}
+@media (min-width:1201px) and (max-width:1400px){
+  .imgRow img{
+    margin-bottom: 25px
+  }
+  .vidRow iframe {
+    margin-bottom: 15px
+}
+  .storiesRow1{
+    margin-bottom:0
+  }
+  .storiesRow1 p {
+    font-size: 14px;
+    margin-top: 5px
+}
+.storiesRow1 h5 {
+  font-size: 20px;
+    margin-top: 11px
+}
+.storiesRow1 .logoDiv {
+  padding-top: 17px;
+    height: 60px;
+    width: 60px;
+}
+.storiesRow1 .storiesBtn, .storiesRow1 .storiesBtn:hover, .storiesRow1 .storiesBtn:active, .storiesRow1 .storiesBtn:focus, .storiesRow1 .storiesBtn:visited {
+  height: 35px;
+    width: 110px;
+    font-size: 13px;
+    margin-top: 20px;
+    line-height: 31px;
+}
+.storiesLoad,
+.storiesLoad:hover,
+.storiesLoad:active,
+.storiesLoad:focus,
+.storiesLoad:visited{
+    height: 35px;
+    width: 130px;
+    font-size: 13px;
+    margin-bottom: 40px;
+    line-height: 25px;
+}
+}
