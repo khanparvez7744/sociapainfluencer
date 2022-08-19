@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+		<link href="style.css" rel="stylesheet">
+        <title>Admin Section</title>
+
+        <script src="../assests/jquery.min.js"></script>
+        <script src="../assests/common.js"></script>
+    </head>
+    <body>
+	<?php require_once 'header.php'; ?>
+        <div class="container">
+            <div class="row">
+            
+            <h2>Influncers List</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Mobile</th>
+                        <th scope="col">Location</th>
+                        <th colspan="2">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                        require_once '../db/connection.php';
+                        $sql = "SELECT * FROM influencer";
+                        $result = $conn->query($sql);
+                    ?>
+
+                    <?php if ($result->num_rows > 0) { ?>
+                        <?php while($row = $result->fetch_assoc()) { ?>
+                            <tr>
+                                <td><?php echo $row["id"]; ?></td>
+                                <td><?php echo $row["name"]; ?></td>
+                                <td><?php echo $row["email"]; ?></td>
+                                <td><?php echo $row["mobilenumber"]; ?></td>
+                                <td><?php echo $row["location"]; ?></td>
+                                <td>
+                                    <?php if ($row["status"] == 1) { ?>
+                                        <form method="post" role="form" action="php/disapprove_influ.php">
+                                            <input type="hidden" name="id" value="<?php echo $row["id"]; ?>">
+                                            <button type="submit" class="btn btn-warning">Disapprove</button>
+                                        </form> 
+                                    <?php } else { ?> 
+                                        <form method="post" role="form" id="appv-influ-<?php echo $row["id"]; ?>" onsubmit="return formSubmit('php/approve_influ.php', '#appv-influ-<?php echo $row["id"]; ?>')">
+                                            <input type="hidden" name="id" value="<?php echo $row["id"]; ?>">
+                                            <button type="submit" class="btn btn-success">Approve</button>
+                                        </form>
+                                    <?php } ?>
+                                    
+                                        <form method="post" role="form" id="delete-influ-<?php echo $row["id"]; ?>" onsubmit="return formSubmit('php/delete_influ.php', '#delete-influ-<?php echo $row["id"]; ?>')" style="margin-top: 10px;">
+                                            <input type="hidden" name="id" value="<?php echo $row["id"]; ?>">
+                                            <button type="submit" class="btn btn-success">DELETE</button>
+                                        </form>
+                                    
+                                </td>
+                                <td>
+                                    <a href="edit_influencer.php?id=<?php echo $row["id"]; ?>">EDIT</a>
+                                </td>
+                            </tr>
+                        <?php } ?>
+                    <?php } ?>
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+<?php
+require_once '../../db/connection.php';
+
+$id = $_POST['id'];
+
+$sql = "DELETE FROM influencer WHERE id='$id'";
+
+if ($conn->query($sql) === TRUE) {
+  echo "Record deleted successfully";
+} else {
+  echo "Error deleted record: " . $conn->error;
+}
+
+$conn->close();
+?>

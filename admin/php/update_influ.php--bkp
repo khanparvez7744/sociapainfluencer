@@ -1,0 +1,28 @@
+<?php
+require_once '../../db/connection.php';
+
+$id = $_POST['id'];
+$name = $_POST['name'];
+$email = $_POST['email'];
+$mobilenumber = $_POST['mobilenumber'];
+$location = $_POST['location'];
+$facebook = $_POST['facebook'];
+$instagram = $_POST['instagram'];
+$twitter = $_POST['twitter'];
+$category = $_POST['category'];
+$perosnalmanager = $_POST['perosnalmanager'];
+$managername = $_POST['manager-name'];
+$managerphone = $_POST['manager-phone'];
+$manageremail = $_POST['manager-email'];
+$message = $_POST['message'];
+
+$sql = "UPDATE influencer SET name='$name',email='$email',mobilenumber='$mobilenumber',location='$location',facebook='$facebook',instagram='$instagram',twitter='$twitter',category='$category',perosnalmanager='$perosnalmanager' WHERE id='$id'";
+
+if ($conn->query($sql) === TRUE) {
+  echo "Record updated successfully";
+} else {
+  echo "Error updating record: " . $conn->error;
+}
+
+$conn->close();
+?>
